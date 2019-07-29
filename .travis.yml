@@ -1,0 +1,12 @@
+sudo: required
+services:
+ - docker
+
+script:
+ - docker build -t supattra/php-slim-composer .
+
+after_success:
+# login to docker CLI
+ - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+ # take those images to docker hub
+ - docker push supattra/php-slim-composer
