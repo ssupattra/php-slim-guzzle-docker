@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  composer:
+    image: composer:latest
+    command: install
+    volumes:
+     - .:/app
+  web:
+    restart: always
+    build:
+     dockerfile: Dockerfile
+     context: .
+    container_name: php_docker
+    volumes:
+      - .:/var/www/html/
+    ports:
+      - "8000:80"
+    stdin_open: true
+    tty: true
