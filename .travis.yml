@@ -10,3 +10,16 @@ after_success:
  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
  # take those images to docker hub
  - docker push supattra/php-slim-composer
+
+deploy:
+ provider: elasticbeanstalk
+ region: us-east-1
+ app: php-slim-docker
+ env: PhpSlimDocker-env
+ bucket_name: elasticbeanstalk-us-east-1-534408061505
+ bucket_path: php-slim-docker
+ on:
+  branch: master
+ access_key_id: $AWS_ACCESS_KEY
+ secret_access_key:
+  secure: $AWS_SECRET_KEY
