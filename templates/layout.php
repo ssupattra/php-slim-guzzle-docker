@@ -182,11 +182,11 @@
                         <h3>PHP Code</h3>
                     </div>
                     <ul class="footer-links">
-                        <li><a href="https://github.com/ssupattra">https://github.com/ssupattra</a></li>
+                        <li><a href="https://github.com/ssupattra/php-slim-guzzle-docker">https://github.com/ssupattra/php-slim-guzzle-docker</a></li>
                     </ul>
                     <div class="footer-right">
                         <ul class="footer-links-soi">
-                            <li><a href="https://github.com/ssupattra"><i class="fa fa-github"></i></a></li>
+                            <li><a href="https://github.com/ssupattra/php-slim-guzzle-docker"><i class="fa fa-github"></i></a></li>
 
                         </ul><!-- end links -->
                     </div>
@@ -201,7 +201,7 @@
     <div class="container">
         <div class="footer-distributed">
             <div class="footer-center">
-                <p class="footer-company-name">All Rights Reserved. &copy; 2018, Design By : <a href="https://html.design/">html design</a></p>
+                <p class="footer-company-name">All Rights Reserved. &copy; 2018, Web Template By : <a href="https://html.design/">html design</a></p>
             </div>
         </div>
     </div><!-- end container -->
