@@ -16,7 +16,7 @@ class Event extends Base
         $list = [];
         $client = $this->c['client'];
         if ($client) {
-            $res = $client->request('GET', 'http://spring-mysql-docker.us-east-1.elasticbeanstalk.com/api/events');
+            $res = $client->request('GET', 'http://spring-java-mysql-docker.us-east-1.elasticbeanstalk.com/api/events');
             $res_array = json_decode($res->getBody());
             if (count($res_array)) {
                 foreach ($res_array as $res_obj) {
