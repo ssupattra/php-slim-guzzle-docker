@@ -14,10 +14,10 @@ after_success:
 deploy:
  provider: elasticbeanstalk
  region: us-east-1
- app: php-slim-docker
+ app: php
  env: PhpSlimDocker-env
  bucket_name: elasticbeanstalk-us-east-1-825369533922
- bucket_path: php-slim-docker
+ bucket_path: php
  on:
   branch: master
  access_key_id: $AWS_ACCESS_KEY
