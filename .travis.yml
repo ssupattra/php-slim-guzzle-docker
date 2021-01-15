@@ -11,14 +11,3 @@ after_success:
  # take those images to docker hub
  - docker push supattra/php-slim-composer
 
-deploy:
- provider: elasticbeanstalk
- region: us-east-1
- app: event-to-meet
- env: EventToMeet-env
- bucket_name: elasticbeanstalk-us-east-1-825369533922
- bucket_path: event-to-meet
- on:
-  branch: master
- access_key_id: $AWS_ACCESS_KEY
- secret_access_key: $AWS_SECRET_KEY
