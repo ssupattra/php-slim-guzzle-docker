@@ -1,4 +1,4 @@
-FROM composer:latest as composer
+FROM composer:latest AS composer
 
 COPY composer.json composer.json
 COPY composer.lock composer.lock
